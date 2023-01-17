@@ -26,3 +26,21 @@ git push -u origin main 어느 원격 브랜치에 푸시할거냐, 이후에는
 git remote, git remote -v
 
 push와 pull 동시상황 : git pull --no-rebase (merge방식) git pull --rebase(rebase)방식
+
+git은 3가지 파일 상태로 관리 : working directory(untraked, tracked)에서 add하면 staging area에서 
+commit하면 repository
+
+git restore --staged (파일명) : staging area에서 working directory
+
+git restore (파일명) : working directory에서도 제거
+
+reset은 세 가지 옵션 : soft(repository -> staging area), mixed(default)(repository -> working directory),
+hard(완전한 삭제)
+
+git checkout HEAD~~ : HEAD 두 단계 뒤로
+
+git checkout - : 앞에 했던 단계로 
+
+fetch : 원격 저장소의 최신 커밋을 로컬로 가져오기만 한다. 
+main branch에서 fetch 후 origin/main branch에서 변경사항을 확인 후에 main branch에서 pull을 진행한다.
+branch역시 마찬가지로 origin/brabch를 확인하고 main에서 git switch -t origin/branch 실행을 진행한다.
