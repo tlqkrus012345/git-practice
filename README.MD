@@ -1,3 +1,5 @@
+wiki, readme : https://github.com/tlqkrus012345/git-practice/wiki
+
 git config --global user.name (이름) : 최초 전역 이름 설정
 
 git config --global user.name : 이름 확인
